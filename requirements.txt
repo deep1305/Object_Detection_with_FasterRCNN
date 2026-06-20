@@ -10,3 +10,4 @@ dvc
 fastapi[all]
 uvicorn
 Pillow
+dvc-gs

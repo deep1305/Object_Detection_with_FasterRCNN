@@ -6,10 +6,10 @@ stages:
     outs:
       - artifacts/raw/
 
-  # model_training:
-  #   cmd: python src/model_training.py
-  #   deps:
-  #     - src/model_training.py
-  #     - artifacts/raw/
-  #   outs:
-  #     - artifacts/models/fasterrcnn.pth
+  model_training:
+    cmd: python src/model_training.py
+    deps:
+      - src/model_training.py
+      - artifacts/raw/
+    outs:
+      - artifacts/models/fasterrcnn.pth
